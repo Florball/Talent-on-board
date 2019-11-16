@@ -1,0 +1,43 @@
+/* Logotipo */
+.logo {
+  width: 7rem;
+}
+
+/* Sección Home */
+.section-home {
+  background-image: linear-gradient(to bottom, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
+  width: 100vw;
+}
+.section-home__isotipo {
+  width: 9rem;
+}
+.section-home__title {
+  font-family: 'Open Sans', sans-serif;
+}
+.section-home__subtitle {
+  font-family: 'Montserrat', sans-serif;
+}
+.section-home__txt {
+  font-family: 'Montserrat', sans-serif;
+}
+.section-home__btn {
+  background-color: #fcbe00;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  outline: none;
+}
+.section-home__btn:hover {
+  background: #ff9c08;
+  color: #fff;
+}
+/* /Sección Home */
+
+/* Section Talent */
+.section-talent {
+  background-image: linear-gradient(to bottom, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
+}
+.section-talent__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+}
