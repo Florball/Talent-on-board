@@ -10,17 +10,17 @@ var db = firebase.firestore();
 //Agregar documentos
 function guardar() {
     var nombre = document.getElementById('nombre').value;
-    var aldea = document.getElementById('aldea').value;
+    var area = document.getElementById('area').value;
 
     db.collection("users").add({
         name: nombre,
-        aldea: aldea,
+        area: area,
     })
         .then(function (docRef) {
             console.log("Document written with ID: ", docRef.id);
             //reiniciar los inputs
             document.getElementById('nombre').value = '';
-            document.getElementById('aldea').value = ''
+            document.getElementById('area').value = ''
         })
         .catch(function (error) {
             console.error("Error adding document: ", error);
@@ -40,7 +40,7 @@ db.collection("users").onSnapshot((querySnapshot) => {
         <tr>
         <th scope="row">${doc.id}</th>
             <td>${doc.data().name}</td>
-            <td>${doc.data().aldea}</td>
+            <td>${doc.data().area}</td>
             <td><button class="btn btn-danger onclick="eliminar('${doc.id}')">Eliminar</button></td>
         </tr>
         `
