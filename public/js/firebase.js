@@ -1,13 +1,15 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyDZCbXxIP0gWHjBFJOEAZ2_k010T11Plkc",
-  authDomain: "tobhs-b018f.firebaseapp.com",
-  databaseURL: "https://tobhs-b018f.firebaseio.com",
-  projectId: "tobhs-b018f",
-  storageBucket: "tobhs-b018f.appspot.com",
-  messagingSenderId: "803328934781",
-  appId: "1:803328934781:web:0c2b0559916d1c03c08214"
+  apiKey: "AIzaSyCtFvs4lJ8mht9jxkvGXnnf-YffETHd2Q0",
+  authDomain: "tobhs-1879e.firebaseapp.com",
+  databaseURL: "https://tobhs-1879e.firebaseio.com",
+  projectId: "tobhs-1879e",
+  storageBucket: "tobhs-1879e.appspot.com",
+  messagingSenderId: "539310081574",
+  appId: "1:539310081574:web:c31b59c2c747613ef908e7",
+  measurementId: "G-K9W5S5NML6"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
