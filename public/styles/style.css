@@ -8,9 +8,10 @@ body {
 
 /* Sección Home */
 .section-home {
-  width: 100vh;
-  overflow-x: hidden;
   box-sizing: border-box;
+  height: auto !important;
+  overflow-x: hidden;
+  width: 100vh;
 }
 .section-home__isotipo {
   width: 9rem;
@@ -62,10 +63,10 @@ body {
   width: 5rem;
 }
 .section-home__title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .section-home__subtitle {
-  font-size: .7rem;
+  font-size: .8rem;
 }
 .section-home__txt {
   font-size: 1.2rem;
