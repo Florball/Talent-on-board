@@ -28,8 +28,8 @@ db.collection("users").onSnapshot((querySnapshot) => {
           <h5 class="card-title"></h5>
           <h6 class="card-subtitle mb-2 text-muted">${doc.data().name}</h6>
           <p class="card-text">${doc.data().area}</p>
-          <a href="${doc.data().red_social_1}" target="_blank" class="card-link">${doc.data().red_social_1}</a> <br/>
-          <a href="${doc.data().red_social_2}" target="_blank" class="card-link">${doc.data().red_social_2}</a>
+          <a href="${doc.data().red_social_1}" target="_blank" class="card-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="${doc.data().red_social_2}" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
         </div>
       </div>
       `
