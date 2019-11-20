@@ -1,5 +1,5 @@
 body {  
-  background-image: linear-gradient(to bottom, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
+  background: #fff;
 }
 /* Logotipo */
 .logo {
@@ -9,7 +9,6 @@ body {
 /* Sección Home */
 .section-home {
   box-sizing: border-box;
-  height: auto !important;
   overflow-x: hidden;
   width: 100vh;
 }
