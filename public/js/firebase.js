@@ -10,18 +10,17 @@ var db = firebase.firestore();
 //Agregar documentos
 function guardar() {
   db.collection("users")({
-    name: nombre,
-    area: area,
+    // name: nombre,
+    // area: area
   })
 }
 
 //leer datos
-var hackspacer = document.getElementById('hackspacers');
+var card = document.getElementById('hackspacers');
 
 db.collection("users").onSnapshot((querySnapshot) => {
   querySnapshot.forEach((doc) => {
-    console.log(`${doc.id} => ${doc.data().name}`);
-    hackspacer.innerHTML +=
+    card.innerHTML +=
       `
       <div class="card mx-2 my-2" style="width: 18rem;">
       <!--  <img src="..." class="card-img-top" alt="..."> -->
@@ -29,8 +28,8 @@ db.collection("users").onSnapshot((querySnapshot) => {
           <h5 class="card-title"></h5>
           <h6 class="card-subtitle mb-2 text-muted">${doc.data().name}</h6>
           <p class="card-text">${doc.data().area}</p>
-          <a href="#" class="card-link">${doc.data().red_social_1}</a> <br/>
-          <a href="#" class="card-link">${doc.data().red_social_2}</a>
+          <a href="${doc.data().red_social_1}" target="_blank" class="card-link">${doc.data().red_social_1}</a> <br/>
+          <a href="${doc.data().red_social_2}" target="_blank" class="card-link">${doc.data().red_social_2}</a>
         </div>
       </div>
       `
