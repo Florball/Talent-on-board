@@ -1,3 +1,6 @@
+body {  
+  background-image: linear-gradient(to bottom, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
+}
 /* Logotipo */
 .logo {
   width: 7rem;
@@ -5,8 +8,9 @@
 
 /* Sección Home */
 .section-home {
-  background-image: linear-gradient(to bottom, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
-  width: 100vw;
+  width: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 .section-home__isotipo {
   width: 9rem;
@@ -34,10 +38,38 @@
 /* /Sección Home */
 
 /* Section Talent */
-.section-talent {
-  background-image: linear-gradient(to bottom, #f7f7f7, #f9f9f9, #fbfbfb, #fdfdfd, #ffffff);
-}
+/* .section-talent {
+  
+} */
 .section-talent__text {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.7rem;
+}
+
+@media (max-width: 425px) {
+  /* Logotipo */
+.logo {
+  padding-top: 1rem;
+  width: 4rem;
+}
+  /* Sección Home */
+.section-home {
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.section-home__isotipo {
+  width: 5rem;
+}
+.section-home__title {
+  font-size: 1.3rem;
+}
+.section-home__subtitle {
+  font-size: .7rem;
+}
+.section-home__txt {
+  font-size: 1.2rem;
+  padding-top: 0 !important;
+}
+/* /Sección Home */
 }
