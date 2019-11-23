@@ -1,0 +1,51 @@
+
+    #contenido{
+        background-color: $amarillo;
+        width: 100vw;
+        height: auto;
+    }
+    #header{
+        width: 100vw;
+        height: 40vh;
+        background-color: $negro;
+    }
+@media only screen and (max-width: 1600px) and (min-width: 992px) {
+    .card{
+        height: $card-alto-xl;
+        width: $card-ancho-xl;
+    }
+    .card-header{
+        img{
+            height: $img-alto;
+            width: $img-ancho;
+        }
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+    .card{
+        height: $card-alto-m;
+        width: $card-ancho-m;
+    }
+    .card-header{
+        img{
+            height: $img-alto;
+            width: $img-ancho;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .card{
+        height: $card-alto-s;
+        width: $card-ancho-s;
+    }
+    .card-header{
+        img{
+            height: $img-alto;
+            width: $img-ancho;
+        }
+    }
+}
+
+
+
+

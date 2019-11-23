@@ -1,0 +1,49 @@
+#contenido {
+  background-color: #fbbd00;
+  width: 100vw;
+  height: auto;
+}
+
+#header {
+  width: 100vw;
+  height: 40vh;
+  background-color: #040101;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 992px) {
+  .card {
+    height: 50vh;
+    width: 30vw;
+  }
+  .card-header img {
+    height: 50%;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  .card {
+    height: 50vh;
+    width: 70vw;
+  }
+  .card-header img {
+    height: 50%;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 50vh;
+    width: 85vw;
+  }
+  .card-header img {
+    height: 50%;
+    width: 30%;
+  }
+}
+
+.card {
+  background-color: #dfdfdf;
+}
+/*# sourceMappingURL=estilos.css.map */
