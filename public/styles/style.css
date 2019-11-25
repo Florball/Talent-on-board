@@ -17,15 +17,23 @@ body {
 }
 .section-home__title {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
 }
 .section-home__subtitle {
+  color: #86898b;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }
 .section-home__txt {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .section-home__btn {
   background-color: #fcbe00;
+  box-shadow: -3px 3px 10px 1px rgb(139, 139, 139);
+  -webkit-box-shadow: -3px 3px 10px 1px rgb(139, 139, 139);
+  -moz-box-shadow: -3px 3px 10px 1px rgb(139, 139, 139);
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
@@ -41,9 +49,52 @@ body {
 /* .section-talent {
   
 } */
-.section-talent__text {
+.section-talent__txt {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.7rem;
+}
+.section-talent__btn-search,
+.section-talent__btn-search:hover {
+  color: #ced4da;
+}
+.section-talent__img {
+  background-position: 50% top;
+  height: 14rem;
+  object-fit: cover;
+}
+.section-talent__card {
+  -webkit-box-shadow: -5px 5px 15px 2px rgba(201,201,201,1);
+  -moz-box-shadow: -5px 5px 15px 2px rgba(201,201,201,1);
+  box-shadow: -6px 6px 14px 2px rgba(201,201,201,1);
+}
+.section-talent__cont-icons {
+  transition: all .9s ease;
+  -webkit-transition: all .9s ease;
+  -moz-transition:all .9s ease;
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease;
+}
+.section-talent__icons {
+  display: inline-block;
+  font-size: 1.35rem;
+}
+.section-talent__link {
+  color: #000;
+}
+.section-talent__link:hover {
+  color: #fcbe00;
+}
+.section-talent__icons:hover {
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
 }
 
 @media (max-width: 425px) {
@@ -57,19 +108,27 @@ body {
   width: 100vw;
   overflow-x: hidden;
   box-sizing: border-box;
+  padding-top: 4rem;
 }
 .section-home__isotipo {
   width: 5rem;
 }
 .section-home__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .section-home__subtitle {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .section-home__txt {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-top: 0 !important;
 }
 /* /Sección Home */
+/* Section talent */
+.section-talent {
+  padding-top: 1rem !important;
+}
+.section-talent__txt {
+  font-size: 1.25rem;
+}
 }

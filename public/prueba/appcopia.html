@@ -20,24 +20,23 @@
 
 <body>
   <nav class="navbar">
-    <div class="container">
-      <a class="pt-sm-4" href="index.html">
-        <img src="assets\images\hackspace-mini.png" class="logo" alt="Asociación HackSpace">
-      </a>
-    </div>
+    <a class="navbar-brand container pt-sm-4" href="index.html">
+      <img src="../assets\images\hackspace-mini.png" class="logo" alt="Asociación HackSpace">
+    </a>
   </nav>
 
   <div class="container-fluid section-talent text-center pt-5">
-    <p class="section-talent__txt">¿Qué perfil estás buscando contratar?</p>
+    <p class="section-talent__text">¿Qué perfil estás buscando contratar?</p>
   </div>
   <div class="container">
     <form class="form-inline my-4 justify-content-center">
-      <input id="searcher" type="text" class="col-10 col-md-5 form-control px-4" placeholder="Backend, frontend, data science, otros.">
-      <div class="col-2 col-md-1 form-control section-talent__btn-search text-center"><i class="fas fa-search"></i></div>
+      <input id="searcher" type="text" class="form-control mx-4 px-4" placeholder="backend">
+      <button id="btn-search" class="btn btn-primary">buscar</button>
     </form>
-    <div id="hackspacers" class="row mt-1 mt-md-5 justify-content-center">
+    <div id="hackspacers" class="row mt-5 justify-content-center">
     </div>
   </div>
+
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js\animation.js"></script>
@@ -57,7 +56,7 @@
   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
   <!-- Firebase -->
-  <script src="js\firebase.js"></script>
+  <script src="appcopia.js"></script>
 </body>
 
 </html>
