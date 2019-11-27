@@ -31,9 +31,9 @@ body {
 }
 .section-home__btn {
   background-color: #fcbe00;
-  box-shadow: -3px 3px 10px 1px rgb(139, 139, 139);
-  -webkit-box-shadow: -3px 3px 10px 1px rgb(139, 139, 139);
-  -moz-box-shadow: -3px 3px 10px 1px rgb(139, 139, 139);
+  box-shadow: -1px 2px 7px 1px #8b8b8b9a;
+  -webkit-box-shadow: -1px 2px 7px 1px #8b8b8b9a;
+  -moz-box-shadow: -1px 2px 7px 1px #8b8b8b9a;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
@@ -62,10 +62,11 @@ body {
   height: 14rem;
   object-fit: cover;
 }
+
 .section-talent__card {
-  -webkit-box-shadow: -5px 5px 15px 2px rgba(201,201,201,1);
-  -moz-box-shadow: -5px 5px 15px 2px rgba(201,201,201,1);
-  box-shadow: -6px 6px 14px 2px rgba(201,201,201,1);
+  box-shadow: -2px 3px 15px 0px #8b8b8b69;
+  -webkit-box-shadow: -2px 3px 15px 0px #8b8b8b69;
+  -moz-box-shadow: -2px 3px 15px 0px #8b8b8b69;
 }
 .section-talent__cont-icons {
   transition: all .9s ease;
@@ -97,6 +98,7 @@ body {
   -o-transition: all 200ms ease-in;
 }
 
+/* Estilos responsive */
 @media (max-width: 425px) {
   /* Logotipo */
 .logo {
@@ -114,13 +116,13 @@ body {
   width: 5rem;
 }
 .section-home__title {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .section-home__subtitle {
   font-size: 0.8rem;
 }
 .section-home__txt {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-top: 0 !important;
 }
 /* /Sección Home */
@@ -131,4 +133,26 @@ body {
 .section-talent__txt {
   font-size: 1.25rem;
 }
+}
+
+@media (min-width: 1600px) {
+  /* Sección Home */
+.section-home__isotipo {
+  margin-top: 4rem;
+  width: 10rem;
+}
+.section-home__title {
+  font-size: 1.6rem;
+}
+.section-home__subtitle {
+  font-size: 1.2rem;
+}
+.section-home__txt {
+  margin: 3rem 0 2rem 0;
+  font-size: 1.5rem;
+}
+.section-home__btn {
+  width: 20rem;
+}
+/* /Sección Home */
 }
