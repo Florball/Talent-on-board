@@ -31,7 +31,7 @@ const filter = () => {
           <div class="section-talent__icons mx-2"><a href="${doc.data().red_social_1}" target="_blank" class="section-talent__link"><i class="fab fa-linkedin-in"></i></a></div>
           <div class="section-talent__icons mx-2"><a href="${doc.data().red_social_2}" target="_blank" class="section-talent__link"><i class="fab fa-github"></i></a></div>
           <div class="section-talent__icons mx-2"><a href="mailto:${doc.data().mail}" target="_blank" class="section-talent__link"><i class="fas fa-envelope"></i></a></div>
-          <div class="section-talent__icons mx-2"><a href="https://api.whatsapp.com/send?phone=${doc.data().number}&text=Hola,%20te%20vi%20en%20la%20página%20de%20Talent%20On%20Board%20y%20me%20gustaría%20hablar%20contigo.&source=&data=" target="_blank" class="section-talent__link"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="section-talent__icons mx-2"><a href="https://api.whatsapp.com/send?phone=${doc.data().number}&text=Hola,%20${doc.data().name}%20te%20vi%20en%20la%20página%20de%20Talent%20On%20Board%20y%20me%20gustaría%20hablar%20contigo.&source=&data=" target="_blank" class="section-talent__link"><i class="fab fa-whatsapp"></i></a></div>
         </div>
       </div>
     </div>
