@@ -26,7 +26,7 @@ const filter = () => {
         <h5 class="card-title text-center">${doc.data().name}</h5>
         <h6 class="card-subtitle mb-3 text-center">${doc.data().area}</h6>
         <h6 class="card-text my-2">Experiencia: ${doc.data().experiencia}.</h6>
-        <h6 class="card-text mb-4">Último proyecto: <a href="${doc.data().proyecto}" target="_blank">Click aquí <i class="fas fa-mouse-pointer"></i></a></h6>
+        <h6 class="card-text mb-4">Último proyecto: <a href="${doc.data().proyecto}" target="_blank">Click aquí  <i class="fas fa-mouse-pointer"></i></a></h6>
         <div class="text-center">
           <div class="section-talent__icons mx-2"><a href="${doc.data().red_social_1}" target="_blank" class="section-talent__link"><i class="fab fa-linkedin-in"></i></a></div>
           <div class="section-talent__icons mx-2"><a href="${doc.data().red_social_2}" target="_blank" class="section-talent__link"><i class="fab fa-github"></i></a></div>

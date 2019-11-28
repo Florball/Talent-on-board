@@ -5,7 +5,6 @@ body {
 .logo {
   width: 7rem;
 }
-
 /* Sección Home */
 .section-home {
   box-sizing: border-box;
@@ -16,16 +15,13 @@ body {
   width: 9rem;
 }
 .section-home__title {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
 }
 .section-home__subtitle {
   color: #86898b;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 .section-home__txt {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -46,12 +42,13 @@ body {
 /* /Sección Home */
 
 /* Section Talent */
-/* .section-talent {
-  
-} */
 .section-talent__txt {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.7rem;
+  font-weight: bold;
+}
+.section-talent__btn-search,
+.section-talent__searcher {
+  font-size: 1rem;
 }
 .section-talent__btn-search,
 .section-talent__btn-search:hover {
@@ -64,9 +61,9 @@ body {
 }
 
 .section-talent__card {
-  box-shadow: -2px 3px 15px 0px #8b8b8b69;
-  -webkit-box-shadow: -2px 3px 15px 0px #8b8b8b69;
-  -moz-box-shadow: -2px 3px 15px 0px #8b8b8b69;
+  box-shadow: -2px 2px 15px 0px #8b8b8b69;
+  -webkit-box-shadow: -2px 2px 15px 0px #8b8b8b69;
+  -moz-box-shadow: -2px 2px 15px 0px #8b8b8b69;
 }
 .section-talent__cont-icons {
   transition: all .9s ease;
@@ -96,6 +93,24 @@ body {
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
+}
+.footer {
+  box-shadow: -2px 2px 13px 0px #8b8b8b69;
+  -webkit-box-shadow: -2px 2px 13px 0px #8b8b8b69;
+  -moz-box-shadow: -2px 2px 13px 0px #8b8b8b69;
+}
+.footer__txt {
+  color: #fcbe00;
+  font-size: 1.5rem;  
+  font-weight: bold;
+}
+
+/* Fuentes */
+.font-one {
+  font-family: 'Open Sans', sans-serif;
+}
+.font-two {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilos responsive */
@@ -132,6 +147,17 @@ body {
 }
 .section-talent__txt {
   font-size: 1.25rem;
+}
+.section-talent__btn-search,
+.section-talent__searcher {
+  font-size: 0.73rem;
+}
+/* Footer */
+.footer {
+  padding: 1.3rem 0 !important;
+}
+.footer__txt {
+  font-size: 1.1rem;
 }
 }
 
