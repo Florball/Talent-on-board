@@ -1,61 +1,65 @@
+:root {
+  --main-bg-color: #f9f9f9;
+  --title-color: #4e4e4e;
+  --subtitle-color: #575656;
+  --light-gray: #86898b;
+  --dark-gray: #3a3a3a;
+  --yellow: #FCBE00;
+}
 /* Fuentes */
 .font-one {
   font-family: 'Open Sans', sans-serif;
-  color: #303030;
 }
 .font-two {
   font-family: 'Montserrat', sans-serif;
-  color: #303030;
 }
 body {  
-  background: #fff;
+  background: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Logotipo */
 .logo {
-  width: 7rem;
+  width: 8rem;
 }
 
 /* Sección Home */
 .section-home {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   width: 100vh;
 }
 .section-home__isotipo {
+  align-self: center;
+  padding-top: 4rem;
   width: 9rem;
 }
 .section-home__title {
-  font-size: 1.6rem;
+  color: var(--title-color);
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 .section-home__subtitle {
-  color: #86898b;
-  font-size: 1rem;
+  color: var(--subtitle-color);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 .section-home__txt {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-.section-home__btn {
-  background-color: #fcbe00;
-  box-shadow: -1px 2px 7px 1px #8b8b8b9a;
-  -webkit-box-shadow: -1px 2px 7px 1px #8b8b8b9a;
-  -moz-box-shadow: -1px 2px 7px 1px #8b8b8b9a;
-  color: #fff;
-  font-size: 1.3rem;
+  align-items: center;
+  color: var(--dark-gray);
+  font-size: 1.8rem;
   font-weight: 600;
-  outline: none;
-}
-.section-home__btn:hover {
-  background: #ff9c08;
-  color: #fff;
 }
 /* /Sección Home */
 
 /* Section Talent */
 .section-talent__txt {
-  font-size: 1.7rem;
-  font-weight: bold;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 .section-talent__btn-search,
 .section-talent__searcher {
@@ -67,14 +71,29 @@ body {
 }
 .section-talent__img {
   background-position: 50% top;
+  border-radius: 20px 20px 0px 0px;
   height: 14rem;
   object-fit: cover;
 }
-
 .section-talent__card {
-  box-shadow: -2px 2px 15px 0px #8b8b8b69;
-  -webkit-box-shadow: -2px 2px 15px 0px #8b8b8b69;
-  -moz-box-shadow: -2px 2px 15px 0px #8b8b8b69;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px 0px #8b8b8b69;
+  -webkit-box-shadow: 8px 8px 20px 0px #8b8b8b69;
+  -moz-box-shadow: 8px 8px 20px 0px #8b8b8b69;
+}
+.card-title {
+  color: var(--dark-gray);
+}
+.card-subtitle {
+  color: var(--subtitle-color);
+  font-weight: 500;
+}
+.card-text {
+  color: var(--title-color);
+  font-weight: 400;
+}
+.card-text span {
+  color: var(--light-gray);
 }
 .section-talent__cont-icons {
   transition: all .9s ease;
@@ -85,41 +104,61 @@ body {
 }
 .section-talent__icons {
   display: inline-block;
-  font-size: 1.35rem;
 }
-.section-talent__link {
-  color: #303030;
-}
-.section-talent__link:hover {
-  color: #fcbe00;
+.icons:hover {
+  fill:#ff0000 !important;
+  stroke: chartreuse !important;
 }
 .section-talent__icons:hover {
   transition: all 200ms ease-in;
-  transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
 }
 .footer {
+  background-color: #ffffff;
   box-shadow: -2px 2px 13px 0px #8b8b8b69;
   -webkit-box-shadow: -2px 2px 13px 0px #8b8b8b69;
   -moz-box-shadow: -2px 2px 13px 0px #8b8b8b69;
 }
 .footer__txt {
-  color: #fcbe00;
-  font-size: 1.5rem;  
-  font-weight: bold;
+  color:  var(--yellow);
+  font-size: 1.3rem;  
+  font-weight: 600;
 }
 /* Estilos responsive */
+
+@media (max-width: 1440px) {
+  /* Sección Home */
+.section-home__isotipo {
+  margin-top: .5rem;
+  width: 10rem;
+}
+.section-home__title {
+  font-size: 1.4rem;
+}
+.section-home__subtitle {
+  font-size: 1.2rem;
+}
+.section-home__txt {
+  padding: 1.6rem 0 !important;
+  font-size: 1.8rem;
+}
+.section-home__btn {
+  width: 20rem;
+}
+/* /Sección Home */
+}
+
 @media (max-width: 425px) {
   /* Logotipo */
 .logo {
-  padding-top: 1rem;
   width: 4rem;
 }
   /* Sección Home */
@@ -161,26 +200,4 @@ body {
 .footer__txt {
   font-size: 1.1rem;
 }
-}
-
-@media (min-width: 1600px) {
-  /* Sección Home */
-.section-home__isotipo {
-  margin-top: 4rem;
-  width: 10rem;
-}
-.section-home__title {
-  font-size: 1.6rem;
-}
-.section-home__subtitle {
-  font-size: 1.2rem;
-}
-.section-home__txt {
-  margin: 3rem 0 2rem 0;
-  font-size: 1.5rem;
-}
-.section-home__btn {
-  width: 20rem;
-}
-/* /Sección Home */
 }

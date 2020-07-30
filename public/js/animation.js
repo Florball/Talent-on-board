@@ -2,7 +2,7 @@
 window.sr = ScrollReveal();
 
 // Animación a logo, call to action, button
-sr.reveal('.logo, .section-home__txt, .section-home__btn', {
+sr.reveal('.logo, .section-home__txt', {
   distance: '200px',
   duration: 1300,
   origin: 'left'
