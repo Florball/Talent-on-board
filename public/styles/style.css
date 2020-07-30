@@ -159,7 +159,8 @@ body {
 @media (max-width: 425px) {
   /* Logotipo */
 .logo {
-  width: 4rem;
+  margin-top: 1rem;
+  width: 6rem;
 }
   /* Sección Home */
 .section-home {
@@ -167,9 +168,6 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   padding-top: 4rem;
-}
-.section-home__isotipo {
-  width: 5rem;
 }
 .section-home__title {
   font-size: 1.1rem;
@@ -179,7 +177,6 @@ body {
 }
 .section-home__txt {
   font-size: 1.2rem;
-  padding-top: 0 !important;
 }
 /* /Sección Home */
 /* Section talent */
@@ -188,10 +185,18 @@ body {
 }
 .section-talent__txt {
   font-size: 1.25rem;
+  margin-bottom: 0;
 }
 .section-talent__btn-search,
 .section-talent__searcher {
   font-size: 0.73rem;
+  padding-top: .2rem;
+}
+.section-talent__card {
+  width: 12rem !important;
+}
+.section-talent__img {
+  height: 12rem;
 }
 /* Footer */
 .footer {
@@ -200,4 +205,12 @@ body {
 .footer__txt {
   font-size: 1.1rem;
 }
+}
+@media (max-width: 375px) {
+  .section-talent__card {
+    width: 18rem !important;
+  }
+  .section-talent__img {
+    height: 18rem;
+  }
 }
