@@ -71,9 +71,8 @@ body {
 .section-talent__btn-search {
   border-radius: 0 1.5rem 1.5rem 0;
 }                      
-.section-talent__btn-search,
-.section-talent__btn-search:hover {
-  color: #ced4da;
+.searcher:hover {
+  border-color: aqua;
 }
 .section-talent__img {
   background-position: 50% top;
