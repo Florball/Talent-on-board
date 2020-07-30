@@ -27,11 +27,11 @@ const filter = () => {
             <h6 class="card-text my-2">Experiencia: <span>${doc.data().experiencia}.</span></h6>
             <h6 class="card-text mt-2 mb-4">Disponibilidad: <span>${doc.data().tiempo}.</span></h6>
             <div class="text-center">
-              <div class="section-talent__icons mx-2"><a href="${doc.data().linkedin}" target="_blank"><img src="assets/icons/linkedin.svg" alt="Linkedin"></a></div>
-              <div class="section-talent__icons mx-2"><a href="${doc.data().github}" target="_blank"><img src="assets/icons/github.svg" alt="Github"></a></div>
-              <div class="section-talent__icons mx-2"><a href="https://api.whatsapp.com/send?phone=${doc.data().contacto}&text=Hola%20${doc.data().nombre},%20te%20vi%20en%20la%20página%20de%20Talent%20On%20Board%20y%20me%20gustaría%20hablar%20contigo.&source=&data=" target="_blank"><img src="assets/icons/whatsapp.svg" alt="Whatsapp"></a></div>
+              <div class="section-talent__icons mx-1"><a href="${doc.data().linkedin}" target="_blank"><img src="assets/icons/linkedin.svg" alt="Linkedin"></a></div>
+              <div class="section-talent__icons mx-1"><a href="${doc.data().github}" target="_blank"><img src="assets/icons/github.svg" alt="Github"></a></div>
+              <div class="section-talent__icons mx-1"><a href="https://api.whatsapp.com/send?phone=${doc.data().contacto}&text=Hola%20${doc.data().nombre},%20te%20vi%20en%20la%20página%20de%20Talent%20On%20Board%20y%20me%20gustaría%20hablar%20contigo.&source=&data=" target="_blank"><img src="assets/icons/whatsapp.svg" alt="Whatsapp"></a></div>
             </div>
-          </div>
+          </div> 
         </div>`;
       } else {
       console.log(doc.data().area)

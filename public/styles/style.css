@@ -1,9 +1,9 @@
 :root {
-  --main-bg-color: #f9f9f9;
+  --main-bg-color: linear-gradient(187.97deg, #F8F8F8 -3.98%, #FFFFFF 83.34%);
   --title-color: #4e4e4e;
-  --subtitle-color: #575656;
+  --subtitle-color: #747474;
   --light-gray: #86898b;
-  --dark-gray: #3a3a3a;
+  --dark-gray: #4d4d4d;
   --yellow: #FCBE00;
 }
 /* Fuentes */
@@ -17,11 +17,7 @@ body {
   background: var(--main-bg-color);
   display: flex;
   flex-direction: column;
-}
-
-/* Logotipo */
-.logo {
-  width: 8rem;
+  height: 100vh !important;
 }
 
 /* Sección Home */
@@ -56,6 +52,10 @@ body {
 /* /Sección Home */
 
 /* Section Talent */
+/* Logotipo */
+.logo {
+  width: 8rem;
+}
 .section-talent__txt {
   color: var(--title-color);
   font-size: 1.8rem;
@@ -64,7 +64,13 @@ body {
 .section-talent__btn-search,
 .section-talent__searcher {
   font-size: 1rem;
-}
+}   
+.section-talent__searcher {
+  border-radius: 1.5rem 0 0 1.5rem;
+} 
+.section-talent__btn-search {
+  border-radius: 0 1.5rem 1.5rem 0;
+}                      
 .section-talent__btn-search,
 .section-talent__btn-search:hover {
   color: #ced4da;
@@ -128,7 +134,7 @@ body {
   -moz-box-shadow: -2px 2px 13px 0px #8b8b8b69;
 }
 .footer__txt {
-  color:  var(--yellow);
+  color:  var(--dark-gray);
   font-size: 1.3rem;  
   font-weight: 600;
 }
@@ -150,33 +156,34 @@ body {
   padding: 1.6rem 0 !important;
   font-size: 1.8rem;
 }
-.section-home__btn {
-  width: 20rem;
-}
 /* /Sección Home */
 }
 
 @media (max-width: 425px) {
   /* Logotipo */
 .logo {
-  margin-top: 1rem;
+  padding-top: .1rem !important;
   width: 6rem;
 }
   /* Sección Home */
 .section-home {
   width: 100vw;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  padding-top: 4rem;
+}
+.section-home__isotipo {
+  width: 7rem;
+  padding: 0;
+  margin: 5rem 1.2rem 1rem!important;
 }
 .section-home__title {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .section-home__subtitle {
   font-size: 0.8rem;
 }
 .section-home__txt {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  padding: .6rem !important;
 }
 /* /Sección Home */
 /* Section talent */
@@ -190,7 +197,7 @@ body {
 .section-talent__btn-search,
 .section-talent__searcher {
   font-size: 0.73rem;
-  padding-top: .2rem;
+  height: 2.5rem;
 }
 .section-talent__card {
   width: 12rem !important;
@@ -207,6 +214,10 @@ body {
 }
 }
 @media (max-width: 375px) {
+  /* Logotipo */
+.logo {
+  padding-top: 0;
+}
   .section-talent__card {
     width: 18rem !important;
   }
