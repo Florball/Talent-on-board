@@ -1,6 +1,6 @@
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
-  apiKey: "AIzaSyC5lsAh_b6_Z1LW4lE3qLciWFMIibHZbwg",
+  apiKey: "dJj4yP78oqcdzgcekut1ro5G",
   authDomain: "talentonboard.firebaseapp.com",
   projectId: "talentonboard"
 });
